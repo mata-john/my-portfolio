@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-4 text-center text-sm leading-6 text-zinc-600">
         <div>
           <p className="font-medium text-zinc-950">
-            © 2026 Johnjayferson Mata
+            &copy; 2026 Johnjayferson Mata
           </p>
           <p className="mt-1">Designed &amp; Developed by Johnjayferson Mata</p>
         </div>

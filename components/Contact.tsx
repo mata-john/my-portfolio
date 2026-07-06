@@ -94,7 +94,7 @@ export default function Contact() {
             <div className="mt-8">
               <h3 className="text-sm font-semibold text-zinc-950">Resume</h3>
               <span className="mt-3 inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-4 py-2 text-sm font-medium text-zinc-700">
-                Resume — Available Upon Request
+                Resume &mdash; Available Upon Request
               </span>
             </div>
           </div>
