@@ -7,7 +7,7 @@ export default function Hero() {
     >
       <div className="max-w-3xl">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
-          Your Name
+          John Jayferson Mata
         </p>
         <h1
           id="hero-title"
