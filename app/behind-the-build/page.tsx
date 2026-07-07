@@ -264,7 +264,7 @@ export default function BehindTheBuildPage() {
               Technical Documentation
             </h2>
             <p className="mt-4 text-sm leading-7 text-zinc-600 sm:text-base">
-              Explore the engineering documentation that accompanies this portfolio. These documents explain the project's architecture, development workflow, and responsible AI-assisted engineering practices.
+              Explore the engineering documentation that accompanies this portfolio. These documents explain the project&apos;s architecture, development workflow, and responsible AI-assisted engineering practices.
             </p>
           </div>
 

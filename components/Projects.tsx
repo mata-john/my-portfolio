@@ -72,7 +72,7 @@ const projects = [
     businessValue:
       "Delivered a functional communication platform that improved faculty-student coordination through SMS-based notifications.",
     githubUrl: null,
-    liveDemoUrl: null,
+    liveDemoUrl: "https://globalcitypaging.com",
     caseStudyUrl: null,
   },
 ];
