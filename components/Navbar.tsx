@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navItems = [
   { href: "#about", label: "About", isActive: false },
   { href: "#skills", label: "Skills", isActive: false },
@@ -14,9 +16,18 @@ export default function Navbar() {
       >
         <a
           href="#hero"
-          className="inline-flex min-h-10 items-center text-base font-semibold text-zinc-950 transition-colors hover:text-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-950"
+          className="inline-flex min-h-10 items-center gap-2 text-base font-semibold text-zinc-950 transition-colors hover:text-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-950"
         >
-          John Jayferson Mata
+          <Image
+            src="/profile.webp"
+            alt=""
+            width={36}
+            height={36}
+            sizes="(min-width: 640px) 36px, 32px"
+            className="size-8 rounded-full border border-zinc-200 object-cover sm:size-9"
+            priority
+          />
+          Johnjayferson Mata
         </a>
         <div className="flex flex-wrap gap-2 text-sm font-medium text-zinc-600 sm:items-center sm:gap-1">
           {navItems.map((item) => (
