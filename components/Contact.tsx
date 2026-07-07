@@ -93,9 +93,15 @@ export default function Contact() {
 
             <div className="mt-8">
               <h3 className="text-sm font-semibold text-zinc-950">Resume</h3>
-              <span className="mt-3 inline-flex rounded-full border border-zinc-200 bg-zinc-50 px-4 py-2 text-sm font-medium text-zinc-700">
-                Resume &mdash; Available Upon Request
-              </span>
+              <a
+                href="/resume.pdf"
+                download="resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center justify-center rounded-full bg-zinc-950 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-950"
+              >
+                Download Resume
+              </a>
             </div>
           </div>
         </div>

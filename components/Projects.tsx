@@ -1,36 +1,30 @@
 const projects = [
   {
-    title: "STI Global City Paging System with SMS Notification",
-    category: "Academic Capstone Project",
-    summary:
-      "A web-based paging system for faculty-student communication with SMS notifications.",
-    role: "Student Developer",
-    contributions: [
-      "Built the user-facing paging and authentication experience",
-      "Implemented OTP-based account recovery and student-facing workflows",
-      "Contributed to database design and project coordination",
-    ],
-    technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "XAMPP"],
-    impact:
-      "Improved communication speed and consistency for school notifications and paging workflows.",
-    githubUrl: "https://github.com/mata-john",
-    liveDemoUrl: "https://globalcitypaging.com",
-    caseStudyUrl: null,
-  },
-  {
     title: "Human Capital Management (HCM)",
     category: "Internship Contribution",
     summary:
-      "Enterprise HR platform work completed during an internship, with contributions across product features and collaboration workflows.",
-    role: "Role to be added",
+      "Contributed to the development of an enterprise Human Capital Management (HCM) system during my internship, collaborating with developers and stakeholders to deliver HR modules and workflow improvements.",
+    role: "Junior Business Analyst & Junior Full-Stack Developer (Intern)",
     contributions: [
-      "Supported frontend and backend feature implementation",
-      "Helped review requirements and translate them into working product updates",
-      "Collaborated with developers and business stakeholders during delivery",
+      "Contributed as both a Junior Business Analyst and Junior Full-Stack Developer throughout the project lifecycle.",
+      "Developed frontend interfaces for HR modules.",
+      "Connected frontend components with backend APIs and database operations.",
+      "Assisted in the migration from PostgreSQL to Microsoft SQL Server (MSSQL).",
+      "Fixed workflow issues and supported debugging during feature integration.",
+      "Collaborated with developers, testers, and stakeholders using Git and modern development workflows.",
     ],
-    technologies: ["React", "Next.js", "TypeScript", "Node.js", "Git", "GitHub"],
-    impact: null,
-    githubUrl: "https://github.com/mata-john",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Microsoft SQL Server (MSSQL)",
+      "Git",
+      "GitHub",
+    ],
+    impact:
+      "Supported delivery of HR modules and workflow improvements for an enterprise platform.",
+    githubUrl: null,
     liveDemoUrl: null,
     caseStudyUrl: null,
   },
@@ -38,12 +32,14 @@ const projects = [
     title: "TASS OneOps",
     category: "Internship Contribution",
     summary:
-      "Internal operations platform work focused on practical feature delivery and team collaboration.",
-    role: "Role to be added",
+      "Contributed to the frontend development of an enterprise operations management platform during my internship.",
+    role: "Frontend Developer (Intern)",
     contributions: [
-      "Implemented application features for internal operations workflows",
-      "Contributed to bug fixing and iterative product improvements",
-      "Used AI-assisted development practices within a collaborative delivery process",
+      "Developed responsive frontend interfaces for assigned modules.",
+      "Built reusable UI components.",
+      "Integrated frontend features with backend APIs.",
+      "Fixed UI bugs and improved user experience.",
+      "Collaborated with backend developers and testers using Git workflows.",
     ],
     technologies: [
       "React",
@@ -53,8 +49,29 @@ const projects = [
       "Git",
       "GitHub",
     ],
-    impact: null,
-    githubUrl: "https://github.com/mata-john",
+    impact:
+      "Improved the consistency and usability of assigned operations workflows through responsive frontend delivery.",
+    githubUrl: null,
+    liveDemoUrl: null,
+    caseStudyUrl: null,
+  },
+  {
+    title: "STI Global City Paging System with SMS Notification",
+    category: "Academic Capstone Project",
+    summary:
+      "A web-based paging system that enables efficient communication between faculty and students through SMS notifications.",
+    role: "Full-Stack Developer (Capstone Team)",
+    contributions: [
+      "Developed the Professor Portal.",
+      "Developed the Program Head Portal.",
+      "Built assigned frontend pages using PHP, HTML, CSS, and JavaScript.",
+      "Integrated application features with MySQL using XAMPP.",
+      "Collaborated with a four-member capstone team throughout development, testing, and deployment.",
+    ],
+    technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "XAMPP"],
+    impact:
+      "Delivered a working communication system for faculty and students with SMS-based notifications.",
+    githubUrl: null,
     liveDemoUrl: null,
     caseStudyUrl: null,
   },
