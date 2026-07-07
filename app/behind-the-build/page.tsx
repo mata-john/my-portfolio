@@ -1,3 +1,30 @@
+const documentationCards = [
+  {
+    icon: "📘",
+    title: "Project Overview",
+    description:
+      "Understand the project's purpose, engineering goals, technology stack, folder structure, and how to run the application locally.",
+    href: "https://github.com/mata-john/my-portfolio/blob/main/docs/01-project-overview.md",
+    cta: "Read Documentation",
+  },
+  {
+    icon: "🏗",
+    title: "Architecture",
+    description:
+      "Explore the application's component architecture, technical decisions, engineering principles, and scalability considerations.",
+    href: "https://github.com/mata-john/my-portfolio/blob/main/docs/02-architecture.md",
+    cta: "Read Documentation",
+  },
+  {
+    icon: "🤖",
+    title: "AI Collaboration",
+    description:
+      "Learn how ChatGPT, Codex, and Claude were integrated into a responsible engineering workflow while maintaining human ownership of architecture, testing, debugging, and deployment.",
+    href: "https://github.com/mata-john/my-portfolio/blob/main/docs/03-ai-collaboration.md",
+    cta: "Read Documentation",
+  },
+];
+
 const sectionCards = [
   {
     title: "Project Overview",
@@ -227,6 +254,64 @@ export default function BehindTheBuildPage() {
             </section>
           ))}
         </div>
+
+        <section className="mt-16 rounded-lg border border-zinc-200 bg-white p-6 sm:p-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
+              Technical Documentation
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-zinc-950 sm:text-3xl">
+              Technical Documentation
+            </h2>
+            <p className="mt-4 text-sm leading-7 text-zinc-600 sm:text-base">
+              Explore the engineering documentation that accompanies this portfolio. These documents explain the project's architecture, development workflow, and responsible AI-assisted engineering practices.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {documentationCards.map((card) => (
+              <article
+                key={card.title}
+                className="flex h-full flex-col rounded-lg border border-zinc-200 bg-zinc-50 p-6 sm:p-8"
+              >
+                <div className="text-2xl" aria-hidden="true">
+                  {card.icon}
+                </div>
+                <h3 className="mt-4 text-lg font-semibold tracking-tight text-zinc-950">
+                  {card.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-7 text-zinc-600">
+                  {card.description}
+                </p>
+                <a
+                  href={card.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center text-sm font-semibold text-zinc-950 transition-colors hover:text-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-950"
+                >
+                  {card.cta} <span aria-hidden="true" className="ml-2">→</span>
+                </a>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-8 rounded-lg border border-zinc-200 bg-white p-6 sm:p-8">
+            <h3 className="text-lg font-semibold tracking-tight text-zinc-950">
+              Source Code
+            </h3>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-zinc-600 sm:text-base">
+              Explore the complete repository including commit history, project structure, documentation, and implementation details.
+            </p>
+            <a
+              href="https://github.com/mata-john/my-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center text-sm font-semibold text-zinc-950 transition-colors hover:text-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-950"
+            >
+              View GitHub Repository <span aria-hidden="true" className="ml-2">→</span>
+            </a>
+          </div>
+        </section>
       </section>
     </main>
   );
