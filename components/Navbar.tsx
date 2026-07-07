@@ -4,6 +4,7 @@ const navItems = [
   { href: "#about", label: "About", isActive: false },
   { href: "#skills", label: "Skills", isActive: false },
   { href: "#projects", label: "Projects", isActive: false },
+  { href: "/behind-the-build", label: "Behind the Build", isActive: false },
   { href: "#contact", label: "Contact", isActive: false },
 ];
 
