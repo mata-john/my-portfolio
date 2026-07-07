@@ -1,45 +1,45 @@
 const projects = [
   {
     title: "Human Capital Management (HCM)",
-    category: "Internship Contribution",
-    summary:
-      "Contributed to the development of an enterprise Human Capital Management (HCM) system during my internship, collaborating with developers and stakeholders to deliver HR modules and workflow improvements.",
+    category: "Internship",
+    businessProblem:
+      "Needed reliable enterprise HR workflows and data-backed operations across internal teams.",
     role: "Junior Business Analyst & Junior Full-Stack Developer (Intern)",
     contributions: [
       "Contributed as both a Junior Business Analyst and Junior Full-Stack Developer throughout the project lifecycle.",
-      "Developed frontend interfaces for HR modules.",
+      "Developed frontend HR modules.",
       "Connected frontend components with backend APIs and database operations.",
-      "Assisted in the migration from PostgreSQL to Microsoft SQL Server (MSSQL).",
-      "Fixed workflow issues and supported debugging during feature integration.",
-      "Collaborated with developers, testers, and stakeholders using Git and modern development workflows.",
+      "Assisted in the PostgreSQL to Microsoft SQL Server migration.",
+      "Fixed workflow issues and participated in debugging during feature integration.",
+      "Collaborated through Git-based team workflows with developers, testers, and stakeholders.",
     ],
     technologies: [
       "React",
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Microsoft SQL Server (MSSQL)",
+      "Microsoft SQL Server",
       "Git",
       "GitHub",
     ],
-    impact:
-      "Supported delivery of HR modules and workflow improvements for an enterprise platform.",
+    businessValue:
+      "Supported delivery of enterprise HR functionality and workflow improvements for a business-critical platform.",
     githubUrl: null,
     liveDemoUrl: null,
     caseStudyUrl: null,
   },
   {
     title: "TASS OneOps",
-    category: "Internship Contribution",
-    summary:
-      "Contributed to the frontend development of an enterprise operations management platform during my internship.",
+    category: "Internship",
+    businessProblem:
+      "Required a consistent, responsive frontend experience for internal operations workflows.",
     role: "Frontend Developer (Intern)",
     contributions: [
-      "Developed responsive frontend interfaces for assigned modules.",
-      "Built reusable UI components.",
-      "Integrated frontend features with backend APIs.",
+      "Built responsive interfaces for assigned modules.",
+      "Developed reusable UI components.",
+      "Connected frontend features with backend APIs.",
       "Fixed UI bugs and improved user experience.",
-      "Collaborated with backend developers and testers using Git workflows.",
+      "Collaborated with backend developers and QA using Git workflows.",
     ],
     technologies: [
       "React",
@@ -49,28 +49,28 @@ const projects = [
       "Git",
       "GitHub",
     ],
-    impact:
-      "Improved the consistency and usability of assigned operations workflows through responsive frontend delivery.",
+    businessValue:
+      "Improved the usability and consistency of enterprise operations workflows through dependable frontend delivery.",
     githubUrl: null,
     liveDemoUrl: null,
     caseStudyUrl: null,
   },
   {
-    title: "STI Global City Paging System with SMS Notification",
-    category: "Academic Capstone Project",
-    summary:
-      "A web-based paging system that enables efficient communication between faculty and students through SMS notifications.",
+    title: "STI Global City Paging System",
+    category: "Capstone",
+    businessProblem:
+      "Needed a reliable communication tool for faculty and students that could send timely notifications at scale.",
     role: "Full-Stack Developer (Capstone Team)",
     contributions: [
       "Developed the Professor Portal.",
       "Developed the Program Head Portal.",
-      "Built assigned frontend pages using PHP, HTML, CSS, and JavaScript.",
-      "Integrated application features with MySQL using XAMPP.",
-      "Collaborated with a four-member capstone team throughout development, testing, and deployment.",
+      "Built assigned frontend pages.",
+      "Integrated the application with MySQL using XAMPP.",
+      "Collaborated within a four-member development team across development, testing, and deployment.",
     ],
     technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "XAMPP"],
-    impact:
-      "Delivered a working communication system for faculty and students with SMS-based notifications.",
+    businessValue:
+      "Delivered a functional communication platform that improved faculty-student coordination through SMS-based notifications.",
     githubUrl: null,
     liveDemoUrl: null,
     caseStudyUrl: null,
@@ -95,13 +95,12 @@ export default function Projects() {
           Projects
         </h2>
         <p className="mt-6 text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-          These projects reflect both academic and professional delivery work,
-          organized to make the problem, my role, and the outcome easier to
-          understand at a glance.
+          Each project is framed around the problem, my role, the work delivered,
+          and the value created for users and teams.
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <article
             key={project.title}
@@ -113,13 +112,19 @@ export default function Projects() {
             <h3 className="mt-3 text-xl font-semibold tracking-tight text-zinc-950">
               {project.title}
             </h3>
-            <p className="mt-4 text-sm leading-6 text-zinc-700">
-              {project.summary}
-            </p>
 
             <div className="mt-6 space-y-6">
               <div>
-                <h4 className="text-sm font-semibold text-zinc-950">Role</h4>
+                <h4 className="text-sm font-semibold text-zinc-950">
+                  Business Problem
+                </h4>
+                <p className="mt-2 text-sm leading-6 text-zinc-600">
+                  {project.businessProblem}
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold text-zinc-950">My Role</h4>
                 <p className="mt-2 text-sm leading-6 text-zinc-600">
                   {project.role}
                 </p>
@@ -127,7 +132,21 @@ export default function Projects() {
 
               <div>
                 <h4 className="text-sm font-semibold text-zinc-950">
-                  Technologies
+                  My Contributions
+                </h4>
+                <ul className="mt-3 space-y-2 text-sm leading-6 text-zinc-600">
+                  {project.contributions.map((contribution) => (
+                    <li key={contribution} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-400" />
+                      <span>{contribution}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold text-zinc-950">
+                  Technologies Used
                 </h4>
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {project.technologies.map((technology) => (
@@ -142,28 +161,12 @@ export default function Projects() {
 
               <div>
                 <h4 className="text-sm font-semibold text-zinc-950">
-                  Key Contributions
+                  Business Value
                 </h4>
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-zinc-600">
-                  {project.contributions.map((contribution) => (
-                    <li key={contribution} className="flex gap-2">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-400" />
-                      <span>{contribution}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="mt-2 text-sm leading-6 text-zinc-600">
+                  {project.businessValue}
+                </p>
               </div>
-
-              {project.impact ? (
-                <div>
-                  <h4 className="text-sm font-semibold text-zinc-950">
-                    Business Impact
-                  </h4>
-                  <p className="mt-2 text-sm leading-6 text-zinc-600">
-                    {project.impact}
-                  </p>
-                </div>
-              ) : null}
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3 border-t border-zinc-100 pt-6 lg:mt-auto">
