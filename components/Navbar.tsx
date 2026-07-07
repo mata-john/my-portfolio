@@ -19,7 +19,7 @@ export default function Navbar() {
           className="inline-flex min-h-10 items-center gap-2 text-base font-semibold text-zinc-950 transition-colors hover:text-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-950"
         >
           <Image
-            src="/profile.webp"
+            src="/john-mata.jpeg"
             alt=""
             width={36}
             height={36}
