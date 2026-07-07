@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const documentationCards = [
   {
     icon: "📘",
@@ -132,6 +134,18 @@ export default function BehindTheBuildPage() {
   return (
     <main className="min-h-screen bg-zinc-50">
       <section className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-10 lg:px-12">
+        <div className="mb-8">
+          <Link
+            href="/"
+            className="inline-flex items-center text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-950"
+          >
+            <span aria-hidden="true" className="mr-2">
+              ←
+            </span>
+            Back to Portfolio
+          </Link>
+        </div>
+
         <div className="max-w-3xl">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
             Behind the Build
