@@ -1,18 +1,11 @@
 const projects = [
   {
-    title: "Human Capital Management (HCM)",
+    title: "Human Capital Management",
     category: "Internship",
     businessProblem:
-      "Needed reliable enterprise HR workflows and data-backed operations across internal teams.",
-    role: "Junior Business Analyst & Junior Full-Stack Developer (Intern)",
-    contributions: [
-      "Contributed as both a Junior Business Analyst and Junior Full-Stack Developer throughout the project lifecycle.",
-      "Developed frontend HR modules.",
-      "Connected frontend components with backend APIs and database operations.",
-      "Assisted in the PostgreSQL to Microsoft SQL Server migration.",
-      "Fixed workflow issues and participated in debugging during feature integration.",
-      "Collaborated through Git-based team workflows with developers, testers, and stakeholders.",
-    ],
+      "The Human Capital Management platform supports enterprise HR operations. As the platform evolved, the team required frontend development and business analysis support to deliver new features and maintain existing workflows.",
+    myContribution:
+      "As a Junior Business Analyst and Junior Full-Stack Developer, I contributed to frontend feature development, supported backend integration, participated in business analysis activities, assisted during database migration, and collaborated with developers while resolving integration issues.",
     technologies: [
       "React",
       "Next.js",
@@ -22,8 +15,8 @@ const projects = [
       "Git",
       "GitHub",
     ],
-    businessValue:
-      "Supported delivery of enterprise HR functionality and workflow improvements for a business-critical platform.",
+    engineeringImpact:
+      "This experience strengthened my understanding of how engineering, business analysis, testing, and collaboration work together throughout the software development lifecycle.",
     githubUrl: null,
     liveDemoUrl: null,
     caseStudyUrl: null,
@@ -32,15 +25,9 @@ const projects = [
     title: "TASS OneOps",
     category: "Internship",
     businessProblem:
-      "Required a consistent, responsive frontend experience for internal operations workflows.",
-    role: "Frontend Developer (Intern)",
-    contributions: [
-      "Built responsive interfaces for assigned modules.",
-      "Developed reusable UI components.",
-      "Connected frontend features with backend APIs.",
-      "Fixed UI bugs and improved user experience.",
-      "Collaborated with backend developers and QA using Git workflows.",
-    ],
+      "TASS OneOps is an internal operations platform that required responsive, maintainable frontend interfaces as new modules were developed.",
+    myContribution:
+      "As a Frontend Developer (Intern), I developed responsive user interfaces, built reusable frontend components, connected frontend features with backend APIs, resolved UI issues, and collaborated through Git-based workflows.",
     technologies: [
       "React",
       "Next.js",
@@ -49,28 +36,22 @@ const projects = [
       "Git",
       "GitHub",
     ],
-    businessValue:
-      "Improved the usability and consistency of enterprise operations workflows through dependable frontend delivery.",
+    engineeringImpact:
+      "Working on OneOps provided hands-on experience contributing to a collaborative engineering team while developing production-oriented frontend features.",
     githubUrl: null,
     liveDemoUrl: null,
     caseStudyUrl: null,
   },
   {
-    title: "STI Global City Paging System",
+    title: "STI Global City Paging System with SMS Notification",
     category: "Capstone",
     businessProblem:
-      "Needed a reliable communication tool for faculty and students that could send timely notifications at scale.",
-    role: "Full-Stack Developer (Capstone Team)",
-    contributions: [
-      "Developed the Professor Portal.",
-      "Developed the Program Head Portal.",
-      "Built assigned frontend pages.",
-      "Integrated the application with MySQL using XAMPP.",
-      "Collaborated within a four-member development team across development, testing, and deployment.",
-    ],
+      "STI College Global City needed a faster and more reliable way for faculty to communicate important announcements and class updates to students. Traditional communication channels were often delayed or inconsistent.",
+    myContribution:
+      "As part of a four-member capstone team, I contributed to building the web application by developing the Professor Portal, Program Head Portal, authentication, OTP-based password recovery, and administrative workflows.",
     technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "XAMPP"],
-    businessValue:
-      "Delivered a functional communication platform that improved faculty-student coordination through SMS-based notifications.",
+    engineeringImpact:
+      "The application is deployed and available at https://globalcitypaging.com. Visitors can explore the live system directly through the Live Demo to see how the platform works.",
     githubUrl: null,
     liveDemoUrl: "https://globalcitypaging.com",
     caseStudyUrl: null,
@@ -124,24 +105,12 @@ export default function Projects() {
               </div>
 
               <div>
-                <h4 className="text-sm font-semibold text-zinc-950">My Role</h4>
-                <p className="mt-2 text-sm leading-6 text-zinc-600">
-                  {project.role}
-                </p>
-              </div>
-
-              <div>
                 <h4 className="text-sm font-semibold text-zinc-950">
-                  My Contributions
+                  My Contribution
                 </h4>
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-zinc-600">
-                  {project.contributions.map((contribution) => (
-                    <li key={contribution} className="flex gap-2">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-400" />
-                      <span>{contribution}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="mt-2 text-sm leading-6 text-zinc-600">
+                  {project.myContribution}
+                </p>
               </div>
 
               <div>
@@ -161,10 +130,10 @@ export default function Projects() {
 
               <div>
                 <h4 className="text-sm font-semibold text-zinc-950">
-                  Business Value
+                  Engineering Impact
                 </h4>
                 <p className="mt-2 text-sm leading-6 text-zinc-600">
-                  {project.businessValue}
+                  {project.engineeringImpact}
                 </p>
               </div>
             </div>

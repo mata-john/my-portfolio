@@ -20,11 +20,7 @@ export default function About() {
             Who I Am
           </h3>
           <p className="mt-4 text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-            I&apos;m Johnjayferson Mata, an aspiring Junior Full-Stack Developer
-            with internship experience in both Business Analysis and Full-Stack
-            Development. I enjoy building software that solves real-world
-            problems while looking beyond the initial requirements to create
-            better user experiences.
+            I&apos;m Johnjayferson Mata, a Full-Stack Developer with internship experience in Business Analysis and Software Development. I enjoy building practical software for real-world problems, and I try to look past surface-level requirements to deliver experiences that genuinely help the people using them.
           </p>
         </article>
 
@@ -33,11 +29,7 @@ export default function About() {
             My Development Philosophy
           </h3>
           <p className="mt-4 text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-            My Full-Stack Development internship taught me the importance of
-            collaboration, ownership, and continuous learning. Working as part of
-            a development team showed me how effective communication, modern
-            development practices, and responsible AI-assisted workflows can
-            improve productivity while maintaining software quality.
+            At Microgenesis, I worked alongside developers and business analysts to build and improve Human Capital Management solutions. Contributing across frontend development, backend integration, and business analysis gave me a clearer understanding of how requirements move from discussion to tested, deployed software within a collaborative team.
           </p>
         </article>
 
@@ -46,10 +38,7 @@ export default function About() {
             Career Goal
           </h3>
           <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-            I am currently seeking a Junior Full-Stack Developer opportunity
-            where I can continue growing my technical skills, contribute to
-            meaningful software projects, and build solutions that create value
-            for both users and businesses.
+            I&apos;m looking for a Junior Full-Stack Developer role where I can continue learning from experienced engineers, contribute to meaningful products, and grow into a more independent software engineer over time.
           </p>
         </article>
       </div>

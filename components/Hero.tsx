@@ -8,19 +8,16 @@ export default function Hero() {
       <div className="mx-auto flex min-h-[80vh] w-full max-w-6xl items-center px-6 py-20 sm:px-10 sm:py-24 lg:px-12 lg:py-28">
         <div className="max-w-[48rem]">
           <p className="mb-4 text-sm font-semibold uppercase text-zinc-500">
-            John Jayferson Mata
+            Full-Stack Developer
           </p>
           <h1
             id="hero-title"
             className="text-4xl font-semibold leading-[1.08] text-zinc-950 sm:text-5xl sm:leading-[1.05] lg:text-6xl"
           >
-            Frontend Engineer building thoughtful, production-ready web
-            experiences.
+            Building software that solves real-world problems through thoughtful engineering.
           </h1>
           <p className="mt-6 max-w-[40rem] text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-            I design and build clean, responsive interfaces with a focus on
-            performance, maintainability, and user experience. I like turning
-            complex ideas into simple, polished products.
+            I&apos;m Johnjayferson Mata. I design and build responsive interfaces with an emphasis on performance, maintainability, and user experience while turning complex problems into simple, well-crafted products.
           </p>
           <nav
             aria-label="Hero actions"
