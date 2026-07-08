@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Johnjayferson Mata | Full-Stack Developer Portfolio",
+  title: "John Jayferson Mata | Full-Stack Developer Portfolio",
   description:
-    "Portfolio of Johnjayferson Mata, a junior full-stack developer focused on responsive web applications, enterprise software contributions, and AI-assisted development workflows.",
+    "Portfolio of John Jayferson Mata, a junior full-stack developer focused on responsive web applications, enterprise software contributions, and AI-assisted development workflows.",
 };
 
 export default function RootLayout({

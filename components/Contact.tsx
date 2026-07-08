@@ -1,7 +1,7 @@
 const contactDetails = [
   {
     label: "Name",
-    value: "Johnjayferson Mata",
+    value: "John Jayferson Mata",
   },
   {
     label: "Email",

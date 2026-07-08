@@ -20,7 +20,7 @@ export default function About() {
             Who I Am
           </h3>
           <p className="mt-4 text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-            I&apos;m Johnjayferson Mata, a Full-Stack Developer with internship experience in Business Analysis and Software Development. I enjoy building practical software for real-world problems, and I try to look past surface-level requirements to deliver experiences that genuinely help the people using them.
+            I&apos;m John Jayferson Mata, a Full-Stack Developer with internship experience in Business Analysis and Software Development. I enjoy building practical software for real-world problems, and I try to look past surface-level requirements to deliver experiences that genuinely help the people using them.
           </p>
         </article>
 

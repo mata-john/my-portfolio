@@ -17,7 +17,7 @@ export default function Hero() {
             Building software that solves real-world problems through thoughtful engineering.
           </h1>
           <p className="mt-6 max-w-[40rem] text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-            I&apos;m Johnjayferson Mata. I design and build responsive interfaces with an emphasis on performance, maintainability, and user experience while turning complex problems into simple, well-crafted products.
+            I&apos;m John Jayferson Mata. I design and build responsive interfaces with an emphasis on performance, maintainability, and user experience while turning complex problems into simple, well-crafted products.
           </p>
           <nav
             aria-label="Hero actions"

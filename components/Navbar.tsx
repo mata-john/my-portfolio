@@ -28,7 +28,7 @@ export default function Navbar() {
             className="size-8 rounded-full border border-zinc-200 object-cover sm:size-9"
             priority
           />
-          Johnjayferson Mata
+          John Jayferson Mata
         </a>
         <div className="flex flex-wrap gap-2 text-sm font-medium text-zinc-600 sm:items-center sm:gap-1">
           {navItems.map((item) => (
