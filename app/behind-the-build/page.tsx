@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const documentationCards = [
   {
@@ -132,12 +134,15 @@ const sectionCards = [
 
 export default function BehindTheBuildPage() {
   return (
-    <main className="min-h-screen bg-zinc-50">
-      <section className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-10 lg:px-12">
+    <>
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <Navbar />
+      <main id="main-content" className="mx-auto min-h-screen w-full max-w-3xl px-4 sm:px-6">
+      <section className="py-10 sm:py-12">
         <div className="mb-8">
           <Link
             href="/"
-            className="inline-flex items-center text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-950"
+            className="inline-flex items-center text-sm font-medium text-muted transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             <span aria-hidden="true" className="mr-2">
               ←
@@ -147,33 +152,33 @@ export default function BehindTheBuildPage() {
         </div>
 
         <div className="max-w-3xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted">
             Behind the Build
           </p>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             Behind the Build
           </h1>
-          <p className="mt-6 text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
+          <p className="mt-6 text-base leading-7 text-muted sm:text-lg sm:leading-8">
             Explore the engineering decisions, architecture, development workflow,
             AI collaboration, and deployment approach behind this portfolio.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 space-y-3">
           {sectionCards.map((section) => (
             <article
               key={section.title}
-              className="flex h-full flex-col rounded-lg border border-zinc-200 bg-white p-6 sm:p-8"
+              className="rounded-lg border border-border bg-surface p-5 sm:p-6"
             >
-              <h2 className="text-xl font-semibold tracking-tight text-zinc-950">
+              <h2 className="text-xl font-semibold tracking-tight text-foreground">
                 {section.title}
               </h2>
-              <p className="mt-4 flex-1 text-sm leading-6 text-zinc-600">
+              <p className="mt-4 flex-1 text-sm leading-6 text-muted">
                 {section.description}
               </p>
               <a
                 href={section.href}
-                className="mt-8 inline-flex items-center text-sm font-semibold text-zinc-950 transition-colors hover:text-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-950"
+                className="mt-8 inline-flex items-center text-sm font-semibold text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
                 Read More <span aria-hidden="true" className="ml-2">
                   →
@@ -183,22 +188,22 @@ export default function BehindTheBuildPage() {
           ))}
         </div>
 
-        <div className="mt-16 space-y-6">
+        <div className="mt-12 space-y-4">
           {sectionCards.map((section) => (
             <section
               key={`${section.title}-detail`}
               id={section.id}
-              className="scroll-mt-24 rounded-lg border border-zinc-200 bg-white p-6 sm:p-8"
+              className="scroll-mt-24 rounded-lg border border-border bg-surface p-5 sm:p-6"
             >
-              <h2 className="text-xl font-semibold tracking-tight text-zinc-950">
+              <h2 className="text-xl font-semibold tracking-tight text-foreground">
                 {section.title}
               </h2>
-              <p className="mt-3 max-w-3xl text-sm leading-7 text-zinc-600 sm:text-base">
+              <p className="mt-3 max-w-3xl text-sm leading-7 text-muted sm:text-base">
                 {section.description}
               </p>
 
               {section.intro ? (
-                <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-600 sm:text-base">
+                <p className="mt-6 max-w-3xl text-sm leading-7 text-muted sm:text-base">
                   {section.intro}
                 </p>
               ) : null}
@@ -207,20 +212,20 @@ export default function BehindTheBuildPage() {
                 <div className="mt-8 space-y-5">
                   {section.sections.map((item) => (
                     <div key={item.label}>
-                      <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
+                      <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-muted">
                         {item.label}
                       </h3>
                       {Array.isArray(item.content) ? (
-                        <ul className="mt-3 space-y-2 text-sm leading-7 text-zinc-600">
+                        <ul className="mt-3 space-y-2 text-sm leading-7 text-muted">
                           {item.content.map((entry) => (
                             <li key={entry} className="flex gap-2">
-                              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-400" />
+                              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                               <span>{entry}</span>
                             </li>
                           ))}
                         </ul>
                       ) : (
-                        <p className="mt-3 text-sm leading-7 text-zinc-600">
+                        <p className="mt-3 text-sm leading-7 text-muted">
                           {item.content}
                         </p>
                       )}
@@ -230,10 +235,10 @@ export default function BehindTheBuildPage() {
               ) : null}
 
               {section.bullets ? (
-                <ul className="mt-6 space-y-3 text-sm leading-7 text-zinc-600">
+                <ul className="mt-6 space-y-3 text-sm leading-7 text-muted">
                   {section.bullets.map((bullet) => (
                     <li key={bullet} className="flex gap-2">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-400" />
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                       <span>{bullet}</span>
                     </li>
                   ))}
@@ -245,7 +250,7 @@ export default function BehindTheBuildPage() {
                   {section.process.map((step) => (
                     <div
                       key={step}
-                      className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-4 text-sm font-medium text-zinc-700"
+                      className="rounded-lg border border-border bg-background px-4 py-4 text-sm font-medium text-foreground"
                     >
                       {step}
                     </div>
@@ -258,7 +263,7 @@ export default function BehindTheBuildPage() {
                   {section.workflow.map((step) => (
                     <div
                       key={step}
-                      className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-4 text-sm font-medium text-zinc-700"
+                      className="rounded-lg border border-border bg-background px-4 py-4 text-sm font-medium text-foreground"
                     >
                       {step}
                     </div>
@@ -269,15 +274,15 @@ export default function BehindTheBuildPage() {
           ))}
         </div>
 
-        <section className="mt-16 rounded-lg border border-zinc-200 bg-white p-6 sm:p-8">
+        <section className="mt-16 rounded-lg border border-border bg-surface p-6 sm:p-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted">
               Technical Documentation
             </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-zinc-950 sm:text-3xl">
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               Technical Documentation
             </h2>
-            <p className="mt-4 text-sm leading-7 text-zinc-600 sm:text-base">
+            <p className="mt-4 text-sm leading-7 text-muted sm:text-base">
               Explore the engineering documentation that accompanies this portfolio. These documents explain the project&apos;s architecture, development workflow, and responsible AI-assisted engineering practices.
             </p>
           </div>
@@ -286,22 +291,22 @@ export default function BehindTheBuildPage() {
             {documentationCards.map((card) => (
               <article
                 key={card.title}
-                className="flex h-full flex-col rounded-lg border border-zinc-200 bg-zinc-50 p-6 sm:p-8"
+                className="flex h-full flex-col rounded-lg border border-border bg-background p-6 sm:p-8"
               >
                 <div className="text-2xl" aria-hidden="true">
                   {card.icon}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold tracking-tight text-zinc-950">
+                <h3 className="mt-4 text-lg font-semibold tracking-tight text-foreground">
                   {card.title}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-7 text-zinc-600">
+                <p className="mt-3 flex-1 text-sm leading-7 text-muted">
                   {card.description}
                 </p>
                 <a
                   href={card.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center text-sm font-semibold text-zinc-950 transition-colors hover:text-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-950"
+                  className="mt-6 inline-flex items-center text-sm font-semibold text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   {card.cta} <span aria-hidden="true" className="ml-2">→</span>
                 </a>
@@ -309,24 +314,26 @@ export default function BehindTheBuildPage() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-lg border border-zinc-200 bg-white p-6 sm:p-8">
-            <h3 className="text-lg font-semibold tracking-tight text-zinc-950">
+          <div className="mt-8 rounded-lg border border-border bg-surface p-6 sm:p-8">
+            <h3 className="text-lg font-semibold tracking-tight text-foreground">
               Source Code
             </h3>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-zinc-600 sm:text-base">
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-muted sm:text-base">
               Explore the complete repository including commit history, project structure, documentation, and implementation details.
             </p>
             <a
               href="https://github.com/mata-john/my-portfolio"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center text-sm font-semibold text-zinc-950 transition-colors hover:text-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-950"
+              className="mt-6 inline-flex items-center text-sm font-semibold text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               View GitHub Repository <span aria-hidden="true" className="ml-2">→</span>
             </a>
           </div>
         </section>
       </section>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }
